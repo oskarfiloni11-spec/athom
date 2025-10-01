@@ -1,0 +1,74 @@
+{
+    "camera": {
+        "cid": "usb:0",
+        "name": "AtHome Camera 1",
+        "enabled": true,
+        "resolution": [
+            1280,
+            720
+        ],
+        "fps": 30,
+        "bitrate": 2500,
+        "codec": "h264",
+        "audio_enabled": true,
+        "rotation": 0,
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "auto_start": false,
+        "stealth_mode": false
+    },
+    "detection": {
+        "enabled": true,
+        "sensitivity": 50,
+        "min_area": 500,
+        "zones": [],
+        "record_on_motion": true,
+        "pre_record_seconds": 5,
+        "post_record_seconds": 10
+    },
+    "storage": {
+        "local_enabled": true,
+        "local_path": "./recordings",
+        "max_size_gb": 100,
+        "retention_days": 30,
+        "ftp_enabled": false,
+        "ftp_host": "ftp.example.com",
+        "ftp_port": 21,
+        "ftp_user": "user",
+        "ftp_password": "",
+        "ftp_remote_path": "/",
+        "s3_enabled": false,
+        "s3_endpoint": "s3.example.com",
+        "s3_bucket": "athome-videos",
+        "s3_access_key": "",
+        "s3_secret_key": ""
+    },
+    "notifications": {
+        "telegram_enabled": false,
+        "telegram_token": "",
+        "telegram_chat_id": "",
+        "email_enabled": false,
+        "email_server": "smtp.example.com",
+        "email_port": 587,
+        "email_user": "user@example.com",
+        "email_password": "",
+        "email_recipient": "admin@example.com"
+    },
+    "security": {
+        "password_hash": "7299e6ff04955c0afa0c7d7661298aa38754a02e2ed609e534b8d67e2e2b12fa"
+    },
+    "signaling": {
+        "host": "127.0.0.1",
+        "port": 8080,
+        "path": "ws"
+    },
+    "webrtc": {
+        "use_webrtc": true,
+        "stun_servers": [
+            "stun:stun.l.google.com:19302",
+            "stun:global.stun.twilio.com:3478"
+        ],
+        "turn_server": null,
+        "fps": 30
+    }
+}

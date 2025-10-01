@@ -1,0 +1,38 @@
+# AtHome Video Surveillance System - Core Dependencies
+# Installation: pip install -r requirements.txt
+
+# Core video and image processing
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# WebRTC for P2P streaming
+aiortc>=1.6.0
+av>=10.0.0
+
+# QR Code generation for camera pairing
+qrcode[pil]>=7.4.0
+
+# Async programming and web server
+aiohttp>=3.8.0
+websockets>=11.0.0
+
+# Security and encryption
+cryptography>=41.0.0
+
+# Cloud storage (optional - for S3 storage)
+# boto3>=1.28.0
+
+# Notifications (optional)
+# python-telegram-bot>=20.0.0
+
+# Note: The following modules are included with Python standard library:
+# - tkinter (GUI interface)
+# - ftplib (FTP client)
+# - smtplib (email sending)
+# - asyncio (async programming)
+# - threading (multi-threading)
+# - json (JSON manipulation)
+# - logging (logging)
+# - pathlib (path management)
+# - dataclasses (data classes)
